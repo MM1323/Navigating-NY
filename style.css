@@ -1,5 +1,9 @@
-body{
-    background-color: #00B0FF; 
+#home_image{
+    
+    background-image: url("https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 
 #title{
