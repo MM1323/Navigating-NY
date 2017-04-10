@@ -11,12 +11,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Font Awsome CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+     <!-- w3School CDN -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- our files -->
     <link rel="stylesheet" href="style.css" type="text/css" />
+    
     <script type="text/javascript" src="script.js"></script>
 </head>
 
+<body id="pages_color">
+    <!-- Navigation -->
+    
 <body id="pages_color">
     <nav class="navbar navbar-inverse" class="topnav" id="myTopnav">
         <div class="container-fluid">
@@ -32,61 +37,60 @@
         </div>
     </nav>
 
-    <!-- Orginal Idea -->
-    <center>
-        <div class="row">
-            <div class="col-sm-4">
-                <h1>Apartment Search</h1>
-            </div>
-            <div class="col-sm-4">
-                <h1>Food Hunt</h1>
-            </div>
-            <div class="col-sm-4">
-                <h1>Job Quest</h1>
-            </div>
-        </div>
+<!-- Slide Show -->
+<section >
+  <img class="mySlides" src="http://bit.ly/2nS4Sr1"
+  style="width:100%;">
+  <img class="mySlides" src="http://bit.ly/2oQ4VbK"
+  style="width:100%;">
+  <img class="mySlides" src="http://bit.ly/2nRSxDb"
+  style="width:100%;">
+</section>
 
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="container">
-                    <img src="http://bit.ly/2okJ48Z" alt="Avatar" class="image" style="width:100%">
-                    <div class="middle">
-                        <div class="text">Apartment Search</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4"><img src="smiley.gif" alt="Smiley face" height="42" width="42"> </div>
-            <div class="col-sm-4"><img src="smiley.gif" alt="Smiley face" height="42" width="42"> </div>
-        </div>
-    </center>
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">THE BAND</h2>
+  <p class="w3-opacity"><i>We love music</i></p>
+  <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
 
-    <!-- Tab Viewer -->
-    <!-- New Idea 
-   <div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>John</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>John is the smartest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Paul</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>Paul is the prettiest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Ringo</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>Ringo is the funniest.</p>
+  </article>
+</section>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<div id="Oslo" class="tabcontent">
-  <h3>Oslo</h3>
-  <p>Oslo is the capital of Norway.</p>
-</div>
-
-<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
-<button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button> 
-   -->
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+   
 
 
 

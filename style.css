@@ -1,5 +1,6 @@
 /*  */
 
+
 /* The Home Page CSS */
 #home_image{
 background-image: url("https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg");
@@ -90,34 +91,4 @@ background-image: url("https://static.pexels.com/photos/2324/skyline-buildings-n
     color: white;
 }
 
-
-/* Tab Header */
-
-.tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-}
-
-.tablink:hover {
-    background-color: #777;
-}
-
-/* Style the tab content */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 50px;
-    text-align: center;
-}
-
-#London {background-color:red;}
-#Paris {background-color:green;}
-#Tokyo {background-color:blue;}
-#Oslo {background-color:orange;}
+.navbar {margin-bottom: 0;}
