@@ -11,18 +11,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Font Awsome CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-     <!-- w3School CDN -->
+    <!-- w3School CDN -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- our files -->
     <link rel="stylesheet" href="style.css" type="text/css" />
-    
+
     <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body id="pages_color">
     <!-- Navigation -->
-    
-<body id="pages_color">
+
     <nav class="navbar navbar-inverse" class="topnav" id="myTopnav">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -30,67 +29,72 @@
             </div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="apt.html">Apartment Search</a></li>
                 <li><a href="food.html">Food Hunt</a></li>
+                <li><a href="apt.html">Apartment Search</a></li>
                 <li><a href="job.html">Job Quest</a></li>
             </ul>
         </div>
     </nav>
 
-<!-- Slide Show -->
-<section >
-  <img class="mySlides" src="http://bit.ly/2nS4Sr1"
-  style="width:100%;">
-  <img class="mySlides" src="http://bit.ly/2oQ4VbK"
-  style="width:100%;">
-  <img class="mySlides" src="http://bit.ly/2nRSxDb"
-  style="width:100%;">
-</section>
+    <!-- Slide Show -->
+    <section>
+        <img class="mySlides" src="http://bit.ly/2nS4Sr1" style="width:100%;">
+        <img class="mySlides" src="http://bit.ly/2oQ4VbK" style="width:100%;">
+        <img class="mySlides" src="http://bit.ly/2nRSxDb" style="width:100%;">
+    </section>
 
-<!-- Website Description -->
-<section class="w3-container w3-center w3-content" style="max-width:600px">
-  <h2 class="w3-wide">NEW YORK</h2>
-  <p class="w3-opacity"><i>We love it</i></p>
-  <p class="w3-justify">Welcome to a travelers' guide to New York. In this website, you can search for food, a new apartment, and even a job. By using this website, any traveler can conquer New York by storm. </p>
-</section>
+    <!-- Website Description -->
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h1 class="w3-wide">NEW YORK</h1>
+        <p class="w3-opacity"><i>We love it</i></p>
+        <p class="w3-justify">Welcome to a travelers' guide to New York. In this website, you can search for food, a new apartment, and even a job. By using this website, any traveler can conquer New York by storm. </p>
+    </section>
 
-<!-- Categories Members -->
-<section class="w3-row-padding w3-center w3-light-grey">
-  <article class="w3-third">
-    <h1>Food</h1>
-    <img src="http://bit.ly/2oaL6YP" alt="Random Name" style="width:100%" id="index_img">
-    <h3>Be ready to find all types of food</h3>
-  </article>
-  <article class="w3-third">
-    <h1>Apartment</h1>
-    <img src="http://bit.ly/2okJ48Z" alt="Random Name" style="width:100%" id="index_img">
-    <h3>Need a place to live? No problem, we can help you with that </h3>
-  </article>
-  <article class="w3-third">
-    <h1>Job</h1>
-    <img src="http://bit.ly/2oaEvgV" alt="Random Name" style="width:100%" id="index_img">
-    <h3>Any job for any profession can be found with just a simple search.</h3>
-  </article>
-</section>
+    <!-- Categories -->
+    <section class="w3-row-padding w3-center w3-light-grey">
+        <article class="w3-third">
+            <a href="food.html">
+                <h2>Food</h2>
+                <img src="http://bit.ly/2oaL6YP" alt="Random Name" style="width:100%" id="index_img">
+                <h3>Be ready to find all types of food</h3>
+        </article>
+        </a>
+        <article class="w3-third">
+            <a href="apt.html">
+                <h2>Apartment</h2>
+                <img src="http://bit.ly/2okJ48Z" alt="Random Name" style="width:100%" id="index_img">
+                <h3>Need a place to live? No problem, we can help you with that </h3>
+        </article>
+        </a>
+        <article class="w3-third">
+            <a href="job.html">
+                <h1>Job</h1>
+                <img src="http://bit.ly/2oaEvgV" alt="Random Name" style="width:100%" id="index_img">
+                <h2>Any job for any profession can be found with just a simple search.</h2>
+            </a>
+        </article>
+    </section>
 
-<script>
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000);
-}
-</script>
-   
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+
 
 
 
