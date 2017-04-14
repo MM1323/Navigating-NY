@@ -11,21 +11,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Font Awsome CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+     <!-- w3School CDN -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
     <!-- our files -->
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script type="text/javascript" src="script.js"></script>
 </head>
 
-<body id="pages_color" class="topnav" id="myTopnav">
-    <nav class="navbar navbar-inverse">
+<body id="pages_color">
+    
+   <!-- Navigation -->
+    <nav class="navbar navbar-inverse" class="topnav" id="myTopnav">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">Navigating New York</a>
             </div>
             <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
-                 <li class="active"><a href="food.html">Food Hunt</a></li>
+                <li class="active"><a href="food.html">Food Hunt</a></li>
                 <li><a href="apt.html">Apartment Search</a></li>
                 <li><a href="job.html">Job Quest</a></li>
             </ul>
@@ -33,8 +37,22 @@
     </nav>
     
     <div class="jumbotron">
-  <h1>Bootstrap Tutorial</h1>      
-  <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+  <h1 id="center">Hungery?</h1>      
+  <p id="center">Start looking for food here...</p>
+</div>
+
+<div class="container"> 
+  <form>
+    <div class="form-group">
+      <label for="usr">Zip Code:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Type of Food:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+    <button type="button" class="btn btn-danger">Search!</button>
+  </form>
 </div>
 
 
