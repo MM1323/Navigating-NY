@@ -91,4 +91,13 @@ background-image: url("https://static.pexels.com/photos/2324/skyline-buildings-n
     color: white;
 }
 
-.navbar {margin-bottom: 0;}
+.navbar {margin-bottom: 0;
+  
+}
+
+/* Index Image Style */
+
+#index_img{
+  height: 550px;
+  width: auto;
+}
