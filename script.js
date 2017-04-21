@@ -10,7 +10,9 @@ $(document).ready(function(){
             var api_url_3 = '&intent=checkin&client_id=LAICFUR5GWDY5MBLEFZCEMXEEYTR0KDQU4MKJVWWU33VSITA&client_secret=RWLSS5MCT3DWVRKKOGOU1ZNBIA4EJGG5TE1NBVHSJWJCPH5Q'
             var complete_url = api_url_1 + search_adress + api_url_2 + search_food + api_url_3;
             $.getJSON(complete_url, function(response) {
-            console.log(response)
+                console.log(response);
+             var restaurant_name = response.response.venues[0].name;
+             $('#appended_results').append('<li>' + 'You can go to ' + restaurant_name + "</li>")
             })
             
         })
