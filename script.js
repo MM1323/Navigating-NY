@@ -14,7 +14,8 @@ $(document).ready(function() {
                 var restaurant_name = response.response.venues[i].name;
                 var restaurant_phone = response.response.venues[i].contact.formattedPhone;
                 var restaurant_adress = response.response.venues[i].location.address;
-                $('#appended_results').append('<div class="col-xs-3 card" style="background-color:lavender;">' + '<p>' + restaurant_name + '</p>' + '<p>' + restaurant_adress + '</p>' + '<p>' + restaurant_phone + '</p>');
+                var restaurant_url = response.response.venues[i].url;
+                $('#appended_results').append('<div class="col-xs-3 card" style="background-color:lavender;">' + '<p>' + restaurant_name + '</p>' + '<p>' + restaurant_adress + '</p>' + '<p>' + restaurant_phone + '</p>' + '<a href="' + restaurant_url+ '"> Go to their website!</a>');
 
             }
 
