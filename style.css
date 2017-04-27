@@ -108,3 +108,18 @@ background-image: url("https://static.pexels.com/photos/2324/skyline-buildings-n
   text-align: center;
 }
 
+
+.card {
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: lightgray;
+}
+
+.col-xs-3 {
+    width: 25%;
+}
+
+/* Trying out new things*/
