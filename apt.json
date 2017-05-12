@@ -1,0 +1,62 @@
+[
+{
+"rent": 1000,
+"size": 500,
+"number_of_bedrooms": 0,
+"number_of_bathrooms": 1,
+"zip_code": 12345, 
+"location": Williamsburg
+},
+{
+"rent": 1200,
+"size": 600,
+"number_of_bedrooms": 1,
+"number_of_bathrooms": 1,
+"zip_code": 12346,
+"location": Greenwich Village
+},
+"rent": 1500,
+"size": 700,
+"number_of_bedrooms": 2,
+"number_of_bathrooms": 1,
+"zip_code": 13396, 
+"location": East Village
+},
+"rent": 15000,
+"size": 5000,
+"number_of_bedrooms": 3,
+"number_of_bathrooms": 2,
+"zip_code": 14896, 
+"location": Upper East Side
+},
+"rent": 3000,
+"size": 900,
+"number_of_bedrooms": 2,
+"number_of_bathrooms": 2,
+"zip_code": 16543, 
+"location": Midtown
+},
+"rent": 1400,
+"size": 650,
+"number_of_bedrooms": 2,
+"number_of_bathrooms": 1,
+"zip_code": 13458, 
+"location": Park Slope
+},
+"rent": 1600,
+"size": 725,
+"number_of_bedrooms": 3,
+"number_of_bathrooms": 2,
+"zip_code": 19875, 
+"location": Hells Kitchen 
+},
+
+
+
+
+
+
+
+]
+
+

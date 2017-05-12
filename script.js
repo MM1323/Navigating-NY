@@ -2,29 +2,31 @@
 $(document).ready(function() {
         $('#go_get_results').click(function() {
         $("#appended_results").empty();
+        
         //Zillow defining values
-        var search_address = $('#address_line').val();
-        var search_city = $('#city_line').val();
-        var search_state = $('#state_line').val();
-        var search_zipcode = $('#zipcode_line').val();
-        var citystatezip = search_city + search_state + search_zipcode;
-        var citystatezip_urlencoded = encodeURI(citystatezip);
-        var searchaddress_urlencoded = encodeURI(search_address);
-        var url_1 = 'https://www.zillow.com/webservice/GetSearchResults.htm?';
-        var url_2 = 'zws-id=X1-ZWz19a68151qff_9hc6e';
-        var url_3 = '&address=';
-        var url_4 = '&citystatezip=';
-        var url_result = url_1 + url_2 + url_3 + searchaddress_urlencoded + url_4 + citystatezip_urlencoded;
+        //var search_address = $('#address_line').val();
+        // var search_city = $('#city_line').val();
+        // var search_state = $('#state_line').val();
+        // var search_zipcode = $('#zipcode_line').val();
+        // var citystatezip = search_city + search_state + search_zipcode;
+        // var citystatezip_urlencoded = encodeURI(citystatezip);
+        // var searchaddress_urlencoded = encodeURI(search_address);
+        // var url_1 = 'https://www.zillow.com/webservice/GetSearchResults.htm?';
+        // var url_2 = 'zws-id=X1-ZWz19a68151qff_9hc6e';
+        // var url_3 = '&address=';
+        // var url_4 = '&citystatezip=';
+        // var url_result = url_1 + url_2 + url_3 + searchaddress_urlencoded + url_4 + citystatezip_urlencoded;
         
     //Zillow API Code
-         $.getJSON(url_result, function(response){
+         $.getJSON("apt.json", function(response){
              console.log(response);
-             for (var i = 1; i<=9; i++){
-                 var home_address = response.results.result.address;
-                 var home_ 
-                 }
+             //for (var i = 1; i<=9; i++){
+                 //var home_address = response.results.result.address;
+                 //var home_ 
+                 //}
              
          })
+         .fail(function() { console.log(arguments) })
         
     });
     
