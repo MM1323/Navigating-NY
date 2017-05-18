@@ -3,7 +3,7 @@
 
 /* The Home Page CSS */
 #home_image{
-background-image: url("https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg");
+background-image: url("./pictures/home-background.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
