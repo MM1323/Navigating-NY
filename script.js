@@ -1,25 +1,26 @@
 // JavaScript File
 $(document).ready(function() {
-    
+
     $('#go_get_results').click(function() {
-        alert("hi");
         $("#appended_results").empty();
-
-
+        var location = $('#location_line').val();
+        var bedroom = $('#bedrooms_line').val();
+        var bathroom = $('#bathrooms_line').val();
+        var rent = $('#rent_line').val();
 
         //apt json
         $.getJSON("apt.json", function(looking) {
             console.log(looking);
-            for (var i = 0; i < looking.length; i++) {
-                var rent = looking[i].rent;
-                
-            }
-
+            var filter = looking.filter(function(apartment) {
+                if ((apartment.location === location) && (apartment.number_of_bedrooms === bedroom ) && (apartment.number_of_bathrooms === bathroom) && (apartment.rent <= rent)){
+                return apartment;
+                }
+            })
+            
         });
 
 
     });
-
 
 
 
@@ -71,7 +72,6 @@ $(document).ready(function() {
 
 
     });
-
 
 
 
