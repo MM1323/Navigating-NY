@@ -2,6 +2,7 @@
 $(document).ready(function() {
 
     $('#go_get_results').click(function() {
+        alert("hi");
         $("#appended_results").empty();
         var location = $('#location_line').val();
         var bedroom = $('#bedrooms_line').val();
@@ -10,12 +11,17 @@ $(document).ready(function() {
 
         //apt json
         $.getJSON("apt.json", function(looking) {
+            alert("hello");
             console.log(looking);
             var filter = looking.filter(function(apartment) {
-                if ((apartment.location === location) && (apartment.number_of_bedrooms === bedroom ) && (apartment.number_of_bathrooms === bathroom) && (apartment.rent <= rent)){
-                return apartment;
+                if ((apartment.location == location) && (apartment.number_of_bedrooms == bedroom ) && (apartment.number_of_bathrooms == bathroom) && (apartment.rent <= rent)){
+                return true;
+                }
+                else{
+                return false; 
                 }
             })
+            console.log(filter);
             
         });
 

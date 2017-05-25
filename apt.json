@@ -2,7 +2,7 @@
 {
 "rent": 1000,
 "size": 500,
-"number_of_bedrooms": 0,
+"number_of_bedrooms": 1,
 "number_of_bathrooms": 1,
 "zip_code": 12345, 
 "location": "Williamsburg"
