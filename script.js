@@ -76,7 +76,7 @@ $(document).ready(function() {
             for (var t = 0; t <= 2; t++) {
                 var x = Math.floor((Math.random() * 10) + 1);
                 var imgUrl = calling.data[x].images.downsized.url;
-                var img = "<img style='height:164px;width:250px;padding:10px;margin:5px;' src= '" + imgUrl + "' />";
+                var img = "<img style='height:164px;width:230px;padding:10px;margin:5px;' src= '" + imgUrl + "' />";
                 $('#appended_giphy_results').append('<div class="col-xs-3">' + img + '</div>')
             };
 
